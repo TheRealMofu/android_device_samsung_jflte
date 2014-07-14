@@ -191,6 +191,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril.v3=newDriverCall \
     dalvik.vm.dexopt-data-only=0
 
+# Boot animation
+    PRODUCT_COPY_FILES += \
+    vendor/du/bootanimations/bootanimation_1080_1920.zip:system/media/bootanimation.zip
+
 # call common msm8960
 $(call inherit-product, device/samsung/msm8960-common/msm8960.mk)
 
